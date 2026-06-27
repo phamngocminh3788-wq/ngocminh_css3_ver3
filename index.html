@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Kiến trúc Máy tính</title>
+    <style>
+        /* Toàn bộ CSS Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* YÊU CẦU: Liên kết Chuyển đến Nội dung chính (Skip Link) */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            background: #0056d2;
+            color: white;
+            padding: 10px 20px;
+            z-index: 100px;
+            text-decoration: none;
+            transition: top 0.3s ease;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* YÊU CẦU: Tạo kiểu điều hướng hấp dẫn (Sử dụng Flexbox & >3 thuộc tính CSS) */
+        .main-nav {
+            display: flex;
+            background-color: #1a252f;
+            padding: 15px 20px;
+            justify-content: center;
+            list-style: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* thuộc tính 1 */
+        }
+
+        .main-nav li {
+            margin: 0 15px; /* thuộc tính 2 */
+        }
+
+        .main-nav a {
+            color: #ffffff; /* thuộc tính 3 */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* YÊU CẦU: Lớp giả :hover thú vị */
+        .main-nav a:hover {
+            background-color: #0056d2;
+            color: #fff;
+            transform: scale(1.05);
+            display: inline-block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        main h1 {
+            margin-bottom: 20px;
+            color: #1a252f;
+        }
+
+        /* YÊU CẦU: Áp dụng thuộc tính Grid (3 cột) */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .grid-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* YÊU CẦU: Kiểu hình ảnh bằng Box Model (border, padding, border-radius) */
+        .box-model-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 15px;
+            /* Box Model tối thiểu */
+            border: 4px solid #34495e;
+            padding: 5px;
+            border-radius: 12px;
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .box-model-img:hover {
+            transform: rotate(2deg) scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+
+    <nav>
+        <ul class="main-nav">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="hobbies.html">Sở thích (5 Ảnh)</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main id="main-content">
+            <h1>Tổng quan Kiến trúc Hệ thống máy tính</h1>
+            <p>Chào mừng đến với trang nghiên cứu về Kỹ thuật máy tính & Lập trình hệ thống cấp thấp.</p>
+
+            <div class="grid-layout">
+                <div class="grid-card">
+                    <img class="box-model-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500" alt="Vi mạch điện tử bán dẫn">
+                    <h3>Khối Vi Xử Lý (CPU)</h3>
+                    <p>Tìm hiểu sâu về cấu trúc tập lệnh và cách các thanh ghi hoạt động phối hợp.</p>
+                </div>
+                <div class="grid-card">
+                    <img class="box-model-img" src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500" alt="Bảng mạch phần cứng máy tính">
+                    <h3>Bộ nhớ & Bus</h3>
+                    <p>Tối ưu hóa tốc độ truy xuất dữ liệu thông qua hệ thống phân cấp bộ nhớ đệm Cache.</p>
+                </div>
+                <div class="grid-card">
+                    <img class="box-model-img" src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=500" alt="Màn hình hiển thị mã nguồn code Assembly">
+                    <h3>Ngôn ngữ Assembly</h3>
+                    <p>Lập trình điều khiển trực tiếp phần cứng bằng MASM32 với độ chính xác tuyệt đối.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
