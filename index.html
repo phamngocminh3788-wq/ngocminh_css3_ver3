@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ - Kiến trúc Máy tính</title>
+    <title>Trang chủ - Phạm Ngọc Minh Portfolio</title>
     <style>
         /* Toàn bộ CSS Reset */
         * {
@@ -27,7 +27,7 @@
             background: #0056d2;
             color: white;
             padding: 10px 20px;
-            z-index: 100px;
+            z-index: 100;
             text-decoration: none;
             transition: top 0.3s ease;
         }
@@ -43,28 +43,28 @@
             padding: 15px 20px;
             justify-content: center;
             list-style: none;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* thuộc tính 1 */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Thuộc tính 1: Bóng đổ */
         }
 
         .main-nav li {
-            margin: 0 15px; /* thuộc tính 2 */
+            margin: 0 15px; /* Thuộc tính 2: Khoảng cách lề */
         }
 
         .main-nav a {
-            color: #ffffff; /* thuộc tính 3 */
+            color: #ffffff; /* Thuộc tính 3: Màu chữ */
             text-decoration: none;
             font-weight: bold;
             font-size: 16px;
             padding: 8px 16px;
             border-radius: 4px;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         /* YÊU CẦU: Lớp giả :hover thú vị */
         .main-nav a:hover {
             background-color: #0056d2;
             color: #fff;
-            transform: scale(1.05);
+            transform: scale(1.08);
             display: inline-block;
         }
 
@@ -74,9 +74,25 @@
             padding: 0 20px;
         }
 
-        main h1 {
+        .welcome-box {
+            background: linear-gradient(135deg, #0056d2, #002d72);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .welcome-box h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        main h2 {
             margin-bottom: 20px;
             color: #1a252f;
+            border-left: 5px solid #0056d2;
+            padding-left: 10px;
         }
 
         /* YÊU CẦU: Áp dụng thuộc tính Grid (3 cột) */
@@ -91,7 +107,7 @@
             background: white;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         /* YÊU CẦU: Kiểu hình ảnh bằng Box Model (border, padding, border-radius) */
@@ -101,8 +117,8 @@
             object-fit: cover;
             display: block;
             margin-bottom: 15px;
-            /* Box Model tối thiểu */
-            border: 4px solid #34495e;
+            /* Box Model thiết lập */
+            border: 4px solid #1a252f;
             padding: 5px;
             border-radius: 12px;
             background-color: #fff;
@@ -110,7 +126,7 @@
         }
 
         .box-model-img:hover {
-            transform: rotate(2deg) scale(1.02);
+            transform: rotate(2deg) scale(1.03);
         }
     </style>
 </head>
@@ -127,25 +143,31 @@
     </nav>
 
     <div class="container">
+        <div class="welcome-box">
+            <h1>Xin chào, mình là Ngọc Minh</h1>
+            <p>Sinh năm 2008 • Hiện đang sống và học tập tại TP. Hồ Chí Minh</p>
+        </div>
+
         <main id="main-content">
-            <h1>Tổng quan Kiến trúc Hệ thống máy tính</h1>
-            <p>Chào mừng đến với trang nghiên cứu về Kỹ thuật máy tính & Lập trình hệ thống cấp thấp.</p>
+            <h2>Học vấn & Định hướng Chuyên ngành</h2>
+            <p>Mình đang là sinh viên năm nhất chuyên ngành <strong>Kỹ thuật Máy tính và Kiến trúc (Computer Engineering and Architecture - CEA)</strong> tại trường Đại học FPT TP.HCM.</p>
+            <p>Mình có niềm đam mê đặc biệt với sự giao thoa giữa phần cứng hệ thống và phần mềm cấp thấp, mong muốn nghiên cứu sâu về cấu trúc máy tính, tối ưu hóa vi xử lý và các ứng dụng trí tuệ nhân tạo vào hệ thống nhúng.</p>
 
             <div class="grid-layout">
                 <div class="grid-card">
-                    <img class="box-model-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500" alt="Vi mạch điện tử bán dẫn">
-                    <h3>Khối Vi Xử Lý (CPU)</h3>
-                    <p>Tìm hiểu sâu về cấu trúc tập lệnh và cách các thanh ghi hoạt động phối hợp.</p>
+                    <img class="box-model-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500" alt="Vi mạch điện tử bán dẫn phần cứng">
+                    <h3>Ngôn ngữ C/C++</h3>
+                    <p>Nền tảng giúp mình tư duy giải thuật tốt và phát triển các hệ thống phần mềm quản lý kho bãi cơ bản.</p>
                 </div>
                 <div class="grid-card">
-                    <img class="box-model-img" src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500" alt="Bảng mạch phần cứng máy tính">
-                    <h3>Bộ nhớ & Bus</h3>
-                    <p>Tối ưu hóa tốc độ truy xuất dữ liệu thông qua hệ thống phân cấp bộ nhớ đệm Cache.</p>
+                    <img class="box-model-img" src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=500" alt="Dòng code lập trình trên màn hình máy tính">
+                    <h3>Assembly (MASM32)</h3>
+                    <p>Nghiên cứu lập trình cấp thấp nhằm giao tiếp và điều khiển trực tiếp các tài nguyên của kiến trúc máy tính.</p>
                 </div>
                 <div class="grid-card">
-                    <img class="box-model-img" src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=500" alt="Màn hình hiển thị mã nguồn code Assembly">
-                    <h3>Ngôn ngữ Assembly</h3>
-                    <p>Lập trình điều khiển trực tiếp phần cứng bằng MASM32 với độ chính xác tuyệt đối.</p>
+                    <img class="box-model-img" src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=500" alt="Công thức toán học ghi trên bảng">
+                    <h3>Toán rời rạc & Giải thuật</h3>
+                    <p>Phát triển tư duy logic cốt lõi thông qua lý thuyết đồ thị, tập hợp và đại số logic mệnh đề.</p>
                 </div>
             </div>
         </main>
