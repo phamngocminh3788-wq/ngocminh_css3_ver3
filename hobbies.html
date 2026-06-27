@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sở thích - Bộ sưu tập hình ảnh</title>
+    <title>Sở thích - Ngọc Minh Portfolio</title>
     <style>
         * {
             box-sizing: border-box;
@@ -107,20 +107,21 @@
         }
 
         /* YÊU CẦU ĐẶC BIỆT: Thực hiện bộ chọn :nth-child để thay đổi bán kính viền xen kẽ */
-        /* Các ảnh ở vị trí lẻ (1, 3, 5): Bo tròn góc trên bên trái và dưới bên phải */
+        /* Các ảnh ở vị trí lẻ (1, 3, 5) */
         .gallery-item:nth-child(odd) .gallery-img {
-            border-radius: 30px 0 30px 0;
+            border-radius: 35px 0 35px 0;
         }
 
-        /* Các ảnh ở vị trí chẵn (2, 4): Bo tròn góc trên bên phải và dưới bên trái */
+        /* Các ảnh ở vị trí chẵn (2, 4) */
         .gallery-item:nth-child(even) .gallery-img {
-            border-radius: 0 30px 0 30px;
+            border-radius: 0 35px 0 35px;
         }
 
         /* Hiệu ứng hover biến đổi nâng cao */
         .gallery-img:hover {
-            border-radius: 50% !important;
-            transform: rotate(5deg);
+            border-radius: 12px !important;
+            transform: scale(1.03);
+            border-color: #34495e;
         }
     </style>
 </head>
@@ -138,12 +139,12 @@
 
     <div class="container">
         <main id="main-content">
-            <h1>Không gian Sở thích & Động lực</h1>
-            <p>Bên cạnh việc ngồi trước màn hình code, đây là 5 mảnh ghép sở thích giúp mình tái tạo năng lượng mỗi ngày.</p>
+            <h1>Thế giới Sở thích & Tiêu khiển</h1>
+            <p>Sau những giờ nghiên cứu căng thẳng bên cạnh các dòng code MASM32 hay bài tập toán rời rạc, đây là những sở thích giúp mình cân bằng lại cuộc sống.</p>
 
             <div class="flex-gallery">
                 <div class="gallery-item">
-                    <img class="gallery-img" src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=500" alt="Sân vận động bóng đá dưới ánh đèn">
+                    <img class="gallery-img" src="https://images.unsplash.com/photo-1577223625856-7fae3103c8db?w=500" alt="Quả bóng đá lăn trên thảm cỏ xanh">
                     <p style="margin-top:10px; font-weight:bold;">Bóng đá</p>
                 </div>
                 <div class="gallery-item">
@@ -151,16 +152,16 @@
                     <p style="margin-top:10px; font-weight:bold;">Bóng bàn</p>
                 </div>
                 <div class="gallery-item">
-                    <img class="gallery-img" src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500" alt="Vợt và bóng Pickleball trên sân nhựa ngoài trời">
+                    <img class="gallery-img" src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500" alt="Sân chơi bộ môn Pickleball ngoài trời">
                     <p style="margin-top:10px; font-weight:bold;">Pickleball</p>
                 </div>
                 <div class="gallery-item">
-                    <img class="gallery-img" src="https://images.unsplash.com/photo-1560684352-8497838a2229?w=500" alt="Khay thức ăn đường phố thơm ngon bắt mắt">
-                    <p style="margin-top:10px; font-weight:bold;">Ẩm thực Sài Gòn</p>
+                    <img class="gallery-img" src="https://images.unsplash.com/photo-1560684352-8497838a2229?w=500" alt="Các khay đồ ăn đường phố Sài Gòn">
+                    <p style="margin-top:10px; font-weight:bold;">Đi ăn uống & Khám phá ẩm thực</p>
                 </div>
                 <div class="gallery-item">
-                    <img class="gallery-img" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500" alt="Góc máy tính setup chơi game chiến thuật chuyên nghiệp">
-                    <p style="margin-top:10px; font-weight:bold;">Gaming giải trí</p>
+                    <img class="gallery-img" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500" alt="Góc bàn máy tính PC chơi game chiến thuật">
+                    <p style="margin-top:10px; font-weight:bold;">Chơi game chiến thuật</p>
                 </div>
             </div>
         </main>
